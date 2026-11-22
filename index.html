@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sara Vitalis — Clínica de Saúde</title>
+  <meta name="description" content="Clínica de saúde moderna: tratamentos para gripe, COVID-19, dengue e mais, com agendamento online e assistente virtual." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- ============ CABEÇALHO ============ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#topo" class="brand" aria-label="Sara Vitalis — início">
+        <span class="brand__mark" aria-hidden="true">SV</span>
+        <span class="brand__name">Sara <em>Vitalis</em></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="#tratamentos">Tratamentos</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#contato">Contato</a>
+        <a href="#" data-open-mine>Meus agendamentos</a>
+      </nav>
+      <button class="btn btn--gold header__cta" data-open-scheduler>Agendar consulta</button>
+      <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="topo">
+      <div class="hero__orb hero__orb--1" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--2" aria-hidden="true"></div>
+      <div class="container hero__grid">
+        <div class="hero__copy reveal">
+          <p class="eyebrow">Clínica de saúde integrada</p>
+          <h1>Cuidado de excelência para <em>cada fase</em> da sua vida.</h1>
+          <p class="lead">Atendimento humano, tecnologia discreta e agenda aberta. Do primeiro sintoma ao acompanhamento, você é recebido com tempo e atenção.</p>
+          <div class="hero__actions">
+            <button class="btn btn--gold btn--lg" data-open-scheduler>Agendar consulta</button>
+            <button class="btn btn--ghost btn--lg" data-open-chat>Falar com a Helena</button>
+          </div>
+          <ul class="hero__stats" aria-label="Números da clínica">
+            <li><strong data-count="24">0</strong><span>h assistente virtual</span></li>
+            <li><strong data-count="14">0</strong><span>dias de agenda aberta</span></li>
+            <li><strong data-count="10">0</strong><span>áreas de cuidado</span></li>
+          </ul>
+        </div>
+
+        <aside class="hero__card reveal" aria-label="Próximo horário disponível">
+          <p class="eyebrow eyebrow--dark">Próximo horário disponível</p>
+          <div class="next" id="next-slot" aria-live="polite">Carregando agenda…</div>
+          <div class="hero__card-actions">
+            <button class="btn btn--emerald" id="next-slot-btn" data-open-scheduler>Reservar este horário</button>
+            <button class="link" data-open-scheduler>Ver todas as datas →</button>
+          </div>
+          <div class="hero__badges">
+            <span>Presencial ou teleconsulta</span>
+            <span>Confirmação imediata</span>
+            <span>Sigilo médico</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ TRATAMENTOS ============ -->
+    <section class="section" id="tratamentos">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow eyebrow--dark">Tratamentos</p>
+          <h2>Qual cuidado você procura hoje?</h2>
+          <p class="section__sub">Escolha uma área para ver sintomas comuns, cuidados gerais e os sinais que pedem atendimento imediato.</p>
+        </header>
+        <div class="filters reveal" id="filters" role="group" aria-label="Filtrar tratamentos"></div>
+        <div class="grid" id="treatment-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============ COMO FUNCIONA ============ -->
+    <section class="section section--dark" id="como-funciona">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Como funciona</p>
+          <h2>Da dúvida à consulta em três passos</h2>
+        </header>
+        <ol class="steps">
+          <li class="step reveal"><span class="step__n">01</span><h3>Conte o que sente</h3><p>Converse com a Helena ou escolha um tratamento. Você recebe orientação geral e sabe quando procurar ajuda.</p></li>
+          <li class="step reveal"><span class="step__n">02</span><h3>Escolha data e horário</h3><p>Veja as datas livres dos próximos 14 dias e reserve o horário que cabe na sua rotina.</p></li>
+          <li class="step reveal"><span class="step__n">03</span><h3>Receba a confirmação</h3><p>Você ganha um protocolo e pode adicionar a consulta ao seu calendário com um clique.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ DIFERENCIAIS ============ -->
+    <section class="section" id="diferenciais">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow eyebrow--dark">Diferenciais</p>
+          <h2>Medicina com o ritmo que você merece</h2>
+        </header>
+        <div class="features">
+          <article class="feature reveal"><h3>Tempo de escuta</h3><p>Consultas planejadas para conversar, examinar e explicar, sem correria.</p></article>
+          <article class="feature reveal"><h3>Equipe integrada</h3><p>Clínica geral, infectologia, pediatria, cardiologia e outras áreas trabalhando em conjunto.</p></article>
+          <article class="feature reveal"><h3>Cuidado contínuo</h3><p>Plano individual, retornos combinados e orientação clara depois da consulta.</p></article>
+          <article class="feature reveal"><h3>Privacidade</h3><p>Dados tratados com sigilo médico e conforme a LGPD. Pedimos só o essencial para agendar.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTATO ============ -->
+    <section class="section section--sand" id="contato">
+      <div class="container contact">
+        <div class="reveal">
+          <p class="eyebrow eyebrow--dark">Contato</p>
+          <h2>Estamos aqui quando você precisar</h2>
+          <p class="section__sub">Dúvidas sobre valores e convênios são confirmadas pela nossa recepção.</p>
+          <dl class="contact__list" id="contact-list"></dl>
+        </div>
+        <div class="contact__cta reveal">
+          <h3>Pronto para cuidar de você?</h3>
+          <p>Reserve em menos de dois minutos.</p>
+          <button class="btn btn--gold btn--lg" data-open-scheduler>Agendar consulta</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p><strong>Sara Vitalis</strong> · Projeto de demonstração. Nomes dos profissionais são fictícios.</p>
+      <p class="footer__meta"><span class="mode" id="mode-badge">Modo demonstração</span> · <a href="#" data-open-mine>Meus agendamentos</a> · <a href="#admin" data-open-admin>Configurações</a></p>
+      <p class="footer__warn">As orientações do site e da assistente virtual são gerais e não substituem avaliação médica. Em emergência, ligue <strong>192 (SAMU)</strong>.</p>
+    </div>
+  </footer>
+
+  <!-- ============ MODAIS (preenchidos por js/app.js) ============ -->
+  <div class="overlay" id="modal-root" hidden></div>
+
+  <!-- ============ CHAT DA HELENA ============ -->
+  <button class="chat-fab" id="chat-fab" aria-label="Abrir chat com a Helena" aria-expanded="false" aria-controls="chat-panel">
+    <span class="chat-fab__icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12Z"/><path d="M12 8.5v5M9.5 11h5"/></svg>
+    </span>
+    <span class="chat-fab__label">Falar com a Helena</span>
+    <span class="chat-fab__badge" id="chat-badge" hidden>1</span>
+  </button>
+
+  <section class="chat" id="chat-panel" role="dialog" aria-label="Chat com a Helena, assistente virtual" aria-modal="false" hidden>
+    <header class="chat__head">
+      <div class="chat__avatar" aria-hidden="true">H</div>
+      <div class="chat__who">
+        <strong>Helena</strong>
+        <span><i class="dot" aria-hidden="true"></i> Assistente virtual · saúde e agendamento</span>
+      </div>
+      <button class="chat__clear" id="chat-clear" type="button" aria-label="Limpar histórico da conversa">Limpar</button>
+      <button class="chat__close" id="chat-close" aria-label="Fechar chat">×</button>
+    </header>
+    <div class="chat__quick">
+      <button class="btn btn--gold btn--sm" id="chat-schedule">Agendar consulta</button>
+      <button class="btn btn--ghost-dark btn--sm" id="chat-treatments">Tratamentos</button>
+    </div>
+    <div class="chat__messages" id="chat-messages" aria-live="polite"></div>
+    <div class="chat__chips" id="chat-chips"></div>
+    <form class="chat__form" id="chat-form" autocomplete="off">
+      <input id="chat-input" type="text" placeholder="Pergunte sobre saúde ou agendamento…" aria-label="Sua mensagem" maxlength="400" />
+      <button type="submit" aria-label="Enviar">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+    </form>
+    <p class="chat__foot">Orientação geral, não substitui avaliação médica. Emergência: 192.</p>
+  </section>
+
+  <!-- A ordem importa: dados → persona → agenda → site → chat.
+       Scripts clássicos (sem módulos) para funcionar abrindo o index.html direto no navegador. -->
+  <script src="js/data.js"></script>
+  <script src="js/persona.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/scheduler.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/chatbot.js"></script>
+</body>
+</html>

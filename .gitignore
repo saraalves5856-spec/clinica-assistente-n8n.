@@ -1,0 +1,12 @@
+# Segredos e configuração local
+js/config.js
+.env
+
+# Arquivos do editor e do sistema
+*.code-workspace
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Dependências, se um dia usar Node
+node_modules/
